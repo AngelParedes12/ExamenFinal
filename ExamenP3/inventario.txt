@@ -1,0 +1,2 @@
+ID: 10, Tipo: Impresora, Marca: X, Modelo: X, Serial: 100, Responsable: Luis
+ID: 5677, Tipo: Desktop, Marca: epso, Modelo: n, Serial: y76y7, Responsable: hny

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="363.0" prefWidth="737.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.examenp3.HelloController">
+   <children>
+      <TextField fx:id="TFid" layoutX="51.0" layoutY="30.0" prefHeight="26.0" prefWidth="187.0" promptText="ID">
+         <opaqueInsets>
+            <Insets right="7.0" />
+         </opaqueInsets></TextField>
+      <ComboBox fx:id="CBtipo" layoutX="51.0" layoutY="79.0" prefHeight="31.0" prefWidth="187.0" promptText="Tipo de activo">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect></ComboBox>
+      <TextField fx:id="TFmarca" layoutX="51.0" layoutY="130.0" prefHeight="31.0" prefWidth="187.0" promptText="Marca" />
+      <TextField fx:id="TFmodelo" layoutX="51.0" layoutY="178.0" prefHeight="26.0" prefWidth="187.0" promptText="Modelo" />
+      <TextField fx:id="TFserial" layoutX="51.0" layoutY="224.0" prefHeight="26.0" prefWidth="187.0" promptText="Serial" />
+      <TextField fx:id="TFresponsable" layoutX="51.0" layoutY="269.0" prefHeight="26.0" prefWidth="187.0" promptText="Responsable" />
+      <Button fx:id="BTguardar" layoutX="155.0" layoutY="320.0" mnemonicParsing="false" onAction="#ONguardar" prefHeight="38.0" prefWidth="120.0" style="-fx-background-color: #08ee36;" text="Guardar">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect></Button>
+      <Button fx:id="BTlimpiar" layoutX="15.0" layoutY="320.0" mnemonicParsing="false" onAction="#ONlimpiar" prefHeight="38.0" prefWidth="120.0" style="-fx-background-color: red;" text="Limpiar">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect></Button>
+      <TableView fx:id="tableView" layoutX="279.0" prefHeight="363.0" prefWidth="459.0">
+         <columns>
+            <TableColumn fx:id="TCid" prefWidth="35.0" text="ID" />
+            <TableColumn fx:id="TCtipo" prefWidth="127.0" text="Tipo de archivo" />
+            <TableColumn fx:id="TCmarca" prefWidth="61.0" text="Marca" />
+            <TableColumn fx:id="TCmodelo" prefWidth="67.0" text="Modelo" />
+            <TableColumn fx:id="TCserial" prefWidth="60.0" text="Serial" />
+            <TableColumn fx:id="TCresponsable" prefWidth="108.0" text="Responsable" />
+         </columns>
+      </TableView>
+      <Label layoutX="21.0" layoutY="27.0" prefHeight="34.0" prefWidth="28.0" text="ID">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
